@@ -4,71 +4,95 @@
     "src": "brass-monkey-cutout.jpg",
     "title": "Cut Out for This",
     "caption": "The face hole did not ask if she was ready. She was ready.",
-    "submitter": "Marie S.",
-    "tag": "tourist trap"
+    "tag": "tourist trap",
+    "photographer": "Marie"
   },
   {
     "date": "2026-03-11",
     "src": "balcony-couple.jpg",
     "title": "Lot of Romance",
     "caption": "Stunning Gulf sunset. Real couple. One Toyota Camry absolutely refusing to leave the frame. You had one job, parking lot.",
-    "submitter": "Marie S.",
-    "tag": "almost made it"
+    "tag": "almost made it",
+    "photographer": "Marie"
   },
   {
     "date": "2026-03-11",
     "src": "balcony-feet.jpg",
     "title": "Putting Your Best Foot Forward",
     "caption": "(And the other one too.) Feet up, Gulf out, fully offline. Podiatrists hate this one weird vacation trick.",
-    "submitter": "Marie S.",
-    "tag": "extremely online"
+    "tag": "extremely online",
+    "photographer": "Marie"
   },
   {
     "date": "2026-03-12",
     "src": "bar-squad.jpg",
     "title": "Just One Drink",
     "caption": "Studies show at least one person in this photo said 'just one drink.' Studies show they were wrong. The dartboard has no comment.",
-    "submitter": "Debbie D.",
-    "tag": "bar life"
+    "tag": "bar life",
+    "photographer": "Debbie"
   },
   {
     "date": "2026-03-12",
     "src": "cobblestone-night.jpg",
     "title": "Cobble-Stone Cold Stunner",
     "caption": "The cobblestones were just sitting there, minding their own business. She made them iconic. They did not resist.",
-    "submitter": "Debbie D.",
-    "tag": "fashion"
+    "tag": "fashion",
+    "photographer": "Debbie"
   },
   {
     "date": "2026-03-12",
     "src": "brass-monkey-sign.jpg",
     "title": "Getting Brass-y",
     "caption": "No photo, no alibi. She came, she saw, she documented it for the record. Notarized by vibe.",
-    "submitter": "Debbie D.",
-    "tag": "tourist trap"
+    "tag": "tourist trap",
+    "photographer": "Debbie"
   },
   {
     "date": "2026-03-12",
     "src": "beech-sand.jpg",
     "title": "Bee-ach, Please",
     "caption": "She crouched in wet sand to write this. The Gulf read it. Nobody regrets anything.",
-    "submitter": "Debbie D.",
-    "tag": "extremely online"
+    "tag": "extremely online",
+    "photographer": "Debbie"
   },
   {
     "date": "2026-03-12",
     "src": "outdoor-couple.jpg",
     "title": "Pair-a-dise Found",
     "caption": "Golden hour fell directly on this patio. Second round incoming. Zero complaints on record.",
-    "submitter": "Debbie D.",
-    "tag": "bar life"
+    "tag": "bar life",
+    "photographer": "Debbie"
   },
   {
     "date": "2026-03-12",
     "src": "wood-ceiling-selfie.jpg",
     "title": "Rafter All That",
     "caption": "Rustic-core achieved. The exposed beams set the vibe. They caught it immediately.",
-    "submitter": "Debbie D.",
+    "tag": "bar life",
+    "photographer": "Debbie"
+  },
+  {
+    "date": "2026-03-12",
+    "src": "debbie-bar-duo.jpg",
+    "title": "Two's Company",
+    "caption": "Nobody came in for one drink. Nobody came in for two. This is simply what a good time looks like when it's being documented.",
+    "photographer": "Debbie",
+    "tag": "bar life"
+  },
+  {
+    "date": "2026-03-12",
+    "src": "debbie-tropical-drinks.jpg",
+    "title": "Yellow Flag, Green Light",
+    "caption": "The restaurant said tropical. The drinks said yes. The color palette aggressively agreed with everyone.",
+    "photographer": "Debbie",
+    "tag": "bar life"
+  },
+  {
+    "date": "2026-03-12",
+    "src": "debbie-bar-table.jpg",
+    "title": "Outdoor Policy",
+    "caption": "Three chairs. Three drinks. The weather had a vote. The weather voted patio.",
+    "photographer": "Debbie",
     "tag": "bar life"
   }
 ]

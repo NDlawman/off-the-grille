@@ -595,8 +595,8 @@
             ${photo.tag
               ? `<span class="card-tag ${tagClass}">${photo.tag}</span>`
               : '<span></span>'}
-            ${photo.submitter
-              ? `<span class="card-submitter">— ${photo.submitter}</span>`
+            ${photo.photographer
+              ? `<span class="card-submitter">📷 ${photo.photographer}</span>`
               : ''}
           </div>
         </div>
@@ -643,8 +643,8 @@
     document.getElementById('lb-caption').textContent = photo.caption || '';
 
     const parts = [
-      photo.submitter ? `Submitted by ${photo.submitter}` : '',
-      photo.date      ? formatDate(photo.date)             : '',
+      photo.photographer ? `📷 ${photo.photographer}` : '',
+      photo.date         ? formatDate(photo.date)      : '',
     ].filter(Boolean);
     document.getElementById('lb-meta').textContent = parts.join('  ·  ');
 
