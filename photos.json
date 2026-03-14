@@ -94,5 +94,37 @@
     "caption": "Three chairs. Three drinks. The weather had a vote. The weather voted patio.",
     "photographer": "Debbie",
     "tag": "bar life"
+  },
+  {
+    "date": "2026-03-11",
+    "src": "gulf-view-office.jpg",
+    "title": "Out of Office, Into Gulf",
+    "caption": "Feet up, Gulf out \u2014 again. Pass-a-Grille has a strict productivity policy and this is what full compliance looks like.",
+    "tag": "almost made it",
+    "photographer": "Jay"
+  },
+  {
+    "date": "2026-03-11",
+    "src": "red-white-booze-crew.jpg",
+    "title": "Four Stars, One Sign",
+    "caption": "Four people. One sign. The sign won most photogenic. The humans are contesting this vigorously.",
+    "tag": "bar life",
+    "photographer": "Jay"
+  },
+  {
+    "date": "2026-03-11",
+    "src": "cobblestone-selfie.jpg",
+    "title": "Making History, Briefly",
+    "caption": "Historic district. Historic decision to stop in the middle of it and take a selfie. The cobblestones have seen worse.",
+    "tag": "extremely online",
+    "photographer": "Jay"
+  },
+  {
+    "date": "2026-03-11",
+    "src": "reef-donkey-duo.jpg",
+    "title": "The Neon Was Right",
+    "caption": "The neon said Reef Donkey. The vibe said stay for one more. The neon was not wrong. It is never wrong.",
+    "tag": "bar life",
+    "photographer": "Jay"
   }
 ]
