@@ -140,6 +140,22 @@
       display: block;
     }
 
+    /* ── MOBILE: prevent sister-site link from squeezing title ── */
+    @media (max-width: 500px) {
+      .header-top {
+        flex-wrap: wrap;
+      }
+      .grille-marks-link {
+        flex-shrink: 1;
+        font-size: 0.68rem;
+        padding: 0.4rem 0.65rem;
+        max-width: 110px;
+      }
+      .grille-marks-link .gm-label {
+        font-size: 0.8rem;
+      }
+    }
+
     /* ── FILTER CONTROLS ── */
     .controls {
       display: flex;
@@ -446,6 +462,117 @@
     footer a { color: rgba(255,107,53,0.75); text-decoration: none; }
     footer a:hover { color: var(--orange); text-decoration: underline; }
 
+    /* ── SUBMIT PHOTO BUTTON ── */
+    .submit-photo-btn {
+      margin-left: auto;
+      background: var(--orange);
+      border: none;
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .submit-photo-btn:hover {
+      background: #e55a28;
+      transform: scale(1.04);
+    }
+
+    /* ── SUBMIT MODAL ── */
+    #submit-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: rgba(5,2,1,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    #submit-modal.open { display: flex; animation: otgFadeIn 0.2s ease; }
+    @keyframes otgFadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    .submit-modal-inner {
+      background: #2a1e1a;
+      border: 1px solid rgba(255,107,53,0.3);
+      max-width: 460px;
+      width: 100%;
+      padding: 2.2rem;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.7);
+    }
+    .submit-modal-close {
+      position: absolute;
+      top: 0.9rem; right: 1rem;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.35);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0.3rem;
+      transition: color 0.15s;
+    }
+    .submit-modal-close:hover { color: white; }
+    .submit-modal-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.5rem;
+    }
+    .submit-modal-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .submit-modal-body {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 1.5rem;
+    }
+    .submit-modal-body strong { color: rgba(255,255,255,0.85); }
+    .submit-modal-body a { color: var(--orange); text-decoration: none; }
+    .submit-modal-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .submit-btn-primary {
+      background: var(--orange);
+      border: none;
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.65rem 1.4rem;
+      border-radius: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.15s;
+    }
+    .submit-btn-primary:hover { background: #e55a28; }
+    .submit-btn-secondary {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.45);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.65rem 1.4rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .submit-btn-secondary:hover { border-color: rgba(255,255,255,0.5); color: white; }
+
     /* ── SCROLL TO TOP ── */
     #scroll-top {
       position: fixed;
@@ -489,6 +616,7 @@
   <div class="controls">
     <span class="controls-label">Filter:</span>
     <button class="filter-btn active" data-tag="all">All</button>
+    <button class="submit-photo-btn" id="open-submit-modal">📷 Submit a Photo</button>
   </div>
 </header>
 
@@ -512,6 +640,24 @@
         <div id="lb-caption"></div>
         <div class="lb-meta" id="lb-meta"></div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUBMIT PHOTO MODAL -->
+<div id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="submit-modal-title">
+  <div class="submit-modal-inner">
+    <button class="submit-modal-close" id="submit-modal-close" aria-label="Close">✕</button>
+    <div class="submit-modal-eyebrow">Submit Your Photo</div>
+    <h2 class="submit-modal-title" id="submit-modal-title">Fire It In</h2>
+    <p class="submit-modal-body">
+      Got a photo from Pass-a-Grille or anywhere nearby that belongs here? Send it over — we'll give it a fair look.<br><br>
+      Not sure if it's Off the Grille material? That's fine. Send it and we'll figure it out. The serious stuff might end up on <a href="https://ndlawman.github.io/grille-marks" target="_blank">Grille Marks</a>. Everything else lands here.<br><br>
+      Email to <strong>ndlawman@gmail.com</strong> with subject <strong>"Photo Submission"</strong> — include where and when it was taken.
+    </p>
+    <div class="submit-modal-actions">
+      <a class="submit-btn-primary" href="mailto:ndlawman@gmail.com?subject=Photo%20Submission&body=Hi%20Jay%2C%0A%0AHere%20is%20my%20photo%20submission%20for%20Off%20the%20Grille.%0A%0ALocation%3A%20%0ADate%20taken%3A%20%0ADescription%3A%20%0A%0APlease%20find%20my%20photo%20attached.">Open Email</a>
+      <button class="submit-btn-secondary" id="submit-modal-cancel">Cancel</button>
     </div>
   </div>
 </div>
@@ -688,6 +834,25 @@
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     e.target.classList.add('active');
     renderGallery(e.target.dataset.tag);
+  });
+
+  /* ── SUBMIT PHOTO MODAL ── */
+  function openSubmitModal() {
+    document.getElementById('submit-modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeSubmitModal() {
+    document.getElementById('submit-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('open-submit-modal').addEventListener('click', openSubmitModal);
+  document.getElementById('submit-modal-close').addEventListener('click', closeSubmitModal);
+  document.getElementById('submit-modal-cancel').addEventListener('click', closeSubmitModal);
+  document.getElementById('submit-modal').addEventListener('click', e => {
+    if (e.target === document.getElementById('submit-modal')) closeSubmitModal();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && document.getElementById('submit-modal').classList.contains('open')) closeSubmitModal();
   });
 
   /* ── SCROLL TO TOP ── */
