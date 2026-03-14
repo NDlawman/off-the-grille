@@ -126,5 +126,29 @@
     "caption": "The neon said Reef Donkey. The vibe said stay for one more. The neon was not wrong. It is never wrong.",
     "tag": "bar life",
     "photographer": "Jay"
+  },
+  {
+    "date": "2026-03-13",
+    "src": "marie-golden-hour.jpg",
+    "title": "Gilded and Unbothered",
+    "caption": "Forty-five minutes to sunset. The Gulf is right there. She's reading something. The golden light is doing its absolute best.",
+    "tag": "portrait of someone not watching the sunset",
+    "photographer": "Jay"
+  },
+  {
+    "date": "2026-03-13",
+    "src": "jay-balcony-snack.jpg",
+    "title": "Ice Cream and Infrastructure",
+    "caption": "He came for the Gulf view. He stayed for the crane. The ice cream was gone before either question could be resolved.",
+    "tag": "balcony dining",
+    "photographer": "Marie"
+  },
+  {
+    "date": "2026-03-13",
+    "src": "gulf-view-toes.jpg",
+    "title": "Working From Shore",
+    "caption": "Her morning meeting was cancelled. The Gulf held the time slot. The flip-flops did not complain.",
+    "tag": "remote work",
+    "photographer": "Jay"
   }
 ]
